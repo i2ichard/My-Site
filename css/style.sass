@@ -1,0 +1,583 @@
+
+@import "vars"
+
+html
+  // padding: 1.5em
+  // background-color: #fff
+
+body
+  // box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25), 0 8px 10px rgba(0, 0, 0, 0.22), 0 -5px 28px rgba(0, 0, 0, 0.25), 0 -1px 10px rgba(0, 0, 0, 0.22)
+
+#vp
+  // position: fixed
+  // background-color: teal
+  // opacity: 0.5
+  // padding: 5px
+
+/* ============================================================
+ *  PARALLAX STYLES
+ ============================================================ */
+
+section
+  &.module
+    &:last-child, p:last-child
+      margin-bottom: 0
+    &.content
+      padding: 0
+    &.parallax
+      padding: 240px 0
+      background-position: 0 0
+
+  &.one
+    h2
+      padding-top: 50px
+      margin-bottom: 10px
+      font-family: 'Roboto Mono', sarif
+      text-shadow: -4px 4px 1px $dark
+      font-weight: 300
+      color: rgba(255, 255, 255, 0.9)
+      text-align: center
+    p
+      margin-bottom: 40px
+      font-size: 16px
+      font-weight: 300
+      color: rgba(255, 255, 255, 0.9)
+      text-align: center
+
+/* ============================================================
+ *  SECTION ONE
+ ============================================================ */
+
+.about p
+  text-align: center
+  margin: 0 auto
+  width: 65%
+  font-size: 16px
+  font-weight: 300
+  color: rgba(255, 255, 255, 0.75)
+  position: relative
+  top: 50%
+  transform: translateY(25%)
+
+.avatar
+  margin: 65px auto
+  background-image: url("../img/avatar2.png")
+  background-repeat: no-repeat
+  background-size: 116%
+  background-position: right -9px top 7px
+  border: 2px solid white
+  border-radius: 50%
+  width: 130px
+  height: 130px
+
+.nav
+  position: static
+  height: 70px
+  width: 100%
+  // background-color: rgba(200, 200, 200, 0.3)
+  padding: 0
+  ul
+    margin: 0 auto
+    padding-top: 26px
+    width: 40%
+    border-top: 1.5px solid $light-white
+    text-align: center
+    list-style: none
+    li
+      position: relative
+      display: inline
+      text-align: center
+      padding: 20px
+      &:after
+        display: block
+        position: absolute
+        left: 0
+        bottom: -5px
+        width: 0
+        height: 5px
+        background-color: #e6e6e6
+        content: ""
+        transition: width 0.2s
+      a
+        color: $light-white
+      &:hover
+        color: $light-white
+        &:after
+          width: 100%
+.footer
+  .nav
+    ul
+      li
+        &:after
+          display: block
+          position: absolute
+          left: 0
+          top: -8px
+          width: 0
+          height: 5px
+          background-color: $light-white
+          content: ""
+          transition: width 0.2s
+        a
+          color: $light-white
+        &:hover
+          color: $light-white
+          &:after
+            width: 100%
+/* ============================================================
+ *  PROJECTS INTRO
+ *============================================================ */
+
+/*section
+  &.two
+    // border: 1px solid orange
+    width: 100%
+    height: 609px
+    background: url(../img/bg/desk.jpg) no-repeat
+    background-size: cover
+    background-position: top -150px
+    h2
+      margin-bottom: 10px
+      font-family: "Roboto Mono", serif
+      font-weight: 300
+      font-size: 3.5em
+      color: $light-white
+      text-align: center
+      padding-top: 80px
+    p
+      font-family: 'Raleway', sans-serif
+      text-align: center
+      margin: 0 auto
+      width: 100%
+      font-size: 2em
+      font-weight: 300
+      color: $light-white
+  */
+
+/* ============================================================
+ *  PROJECTS
+ *============================================================ */
+section
+  &.three
+    // border: 1px solid orange
+    width: 100%
+    height: 100%
+    background-size: 350px
+    // background-image: $cast
+    background-color: #e6e6e6
+
+    h2
+      margin-bottom: 10px
+      font-family: "Roboto Mono", serif
+      font-weight: 300
+      font-size: 3.5em
+      color: $light-white
+      text-align: center
+      padding-top: 80px
+    p
+      text-align: center
+      margin: 0 auto
+      width: 100%
+      color: $dark
+      font-family: 'Roboto Mono', serif
+      font-weight: 300
+
+.left-side
+  img
+    display: block
+    margin: 80px auto
+    max-width: 400px
+
+.right-side
+  p
+    text-align: center
+    max-width: 500px
+    display: block
+    margin: 0 auto
+
+  img
+    display: block
+    margin: 80px auto 10px auto
+
+.bborder
+  border-bottom: 0.5px solid rgba(0,0,0,0.2)
+
+.tuzola
+  // background-image: $speckles
+  .right-side
+    img
+      display: block
+      margin: 80px auto 10px auto
+      width: 180px
+
+  * p
+    // color: $orange
+
+  * a
+    color: $orange
+.eventhub
+  // background-image: $ignasi
+
+  * p
+    // color: $pink
+.as
+  * p
+    // color: #FCBB06
+.as-text
+  h1
+    display: block
+    margin: 80px auto 10px auto
+    text-align: center
+    font-size: 2.5em
+    color: #00CBFF
+    font-family: 'Coming Soon', cursive
+
+  * a
+    color: #00cbff
+
+.other
+  p
+    padding: 18px
+/* ============================================================
+ *  SKILLS
+ *============================================================ */
+section.skills
+  // border: 1px solid green
+  background-image: $cast
+  background-size: 275px
+
+
+.skills
+  max-height: 300px
+  color: #4b4b4b
+
+.bars
+  margin-top: 25px
+  // background-color: lightblue
+
+.skill
+  width: 440px
+  height: 23px
+  font-size: 0
+
+.label
+  margin-bottom: 5px
+
+.skill span
+  display: inline-block
+  border: 10px solid $accent
+  width: 20px
+  height: 15px
+
+@for $i from 1 through 20
+  .skill-#{$i} span:nth-child(n+#{$i})
+    @extend %skill-color
+
+%skill-color
+  border: 10px solid $light-white
+  width: 20px
+  height: 15px
+
+/* ============================================================
+ *  CONTACT
+ *============================================================ */
+.logo
+  background-image: url(../img/rm-logo.svg)
+  background-repeat: no-repeat
+  width: 50px
+  height: 50px
+  margin: 20px auto
+  position: relative
+  top: 50%
+  transform: translateY(20%)
+
+.stuff
+  margin-top: 25px
+  padding-top: 20px
+
+.info
+  // background: $dark
+  color: #fff
+  float: left
+  padding: 10px 2% 40px
+  width: 26%
+  text-align: left
+
+  h4
+    color: $accent
+    font-family: 'Roboto Mono', serif
+    font-size: 1.4em
+    letter-spacing: 2px
+    text-transform: uppercase
+    margin: 20px 0px 0px 0px
+
+  h4:first-child
+    margin: 0px
+
+  h5, h5 a
+    color: $light-white
+    margin: 0px 0 5px 0
+    font-weight: 300
+    text-transform: lowercase
+
+form
+  // background: #F2F3F4
+  font-family: 'Roboto Mono', serif
+  padding: 10px 20px 30px
+  width: 60%
+  float: right
+  color: $light-white
+
+  h4
+    text-align: left
+    // background: $accent
+    color: $light-white
+    font-size: 1.4em
+    padding: 20px
+    margin: -10px -20px
+
+  p
+    clear: both
+    margin-top: 20px
+
+    label
+      float: left
+      font-size: 0.8em
+      margin-top: 10px
+      width: 22%
+      height: 30px
+      color: $light-white
+
+    input
+      background: none
+      border: none
+      border-bottom: 1px solid $light-white
+      font-family: "Roboto Mono", serif
+      font-size: 1em
+      color: $light-white
+      outline: none
+      width: 77%
+      height: 30px
+
+    textarea
+      background: rgba(255, 255, 255, 0.4)
+      color: $dark
+      border: none
+      outline: none
+      font-family: "Roboto Mono", serif
+      font-size: 0.8em
+      font-weight: 500
+      margin-top: 10px
+      padding: 2%
+      width: 77%
+      height: 60px
+
+  .dots
+    // background: url(../img/form-dots.png) repeat-x left center
+    margin: 30px 0 0 0
+    padding-bottom: 0
+    text-align: right
+    width: 99%
+
+    input.submit
+      background: $accent
+      border: none
+      color: #fff
+      font: normal 0.8em "Raleway"
+      letter-spacing: 2px
+      padding: 4px 60px 6px
+
+    input.submit:hover
+      background: rgba(67, 149, 209, 0.65)
+
+.footer
+  clear: both
+  padding: 100px 0 20px 0
+
+  .cr
+    p
+      text-align: center
+      clear: both
+      color: $light-white
+      font-size: 0.75em
+
+      i
+        font-size: 1.75em
+
+
+/* ============================================================
+ *  PARALLAX BG
+ *============================================================ */
+
+section.module
+  &.parallax-1
+    background-image: $stardust
+    -webkit-animation: 100s scroll infinite linear
+    -moz-animation: 100s scroll infinite linear
+    -o-animation: 100s scroll infinite linear
+    -ms-animation: 100s scroll infinite linear
+    animation: 100s scroll infinite linear
+  &.parallax-2
+    background-image: $speckles
+  &.parallax-3
+    background-color: $dark
+    background-image: $cast
+    background-size: 375px
+
+
+/* ============================================================
+ *  MEDIA QUERYS
+ *============================================================ */
+/*====DESKTOP SIZE====*/
+@media only screen and (min-width: 1024px)
+  section
+    &.module h2
+      font-size: 4em
+
+    &.module
+      &.parallax
+        padding: 0
+
+
+
+/*====TABLET SIZE====*/
+@media only screen and (min-width: 800px) and (max-width: 1024px)
+  form
+    p label
+      font-size: 0.6em
+
+  section
+    &.module h2
+      font-size: 3em
+    &.two
+      background-position: top right -155px
+    &.module
+      p
+        font-size: 1em
+      &.parallax
+        padding: 0
+
+      .nav
+        ul
+          width: 75%
+          li a
+            font-size: 1em
+    &.three
+      p
+        font-size: 1em
+        width: 100%
+
+      .left-side img
+        width: 75%
+
+      .bborder
+        border: none
+
+/*====MOBILE SIZE====*/
+@media only screen and (min-width: 320px) and (max-width: 800px)
+  section
+    &.module h2
+      font-size: 3em
+    &.two
+      background-position: top right -155px
+    &.module
+      p
+        font-size: 1em
+      &.parallax
+        padding: 0
+
+      .nav
+        ul
+          width: 95%
+          li a
+            font-size: 0.9em
+
+    &.three
+      p
+        width: 100%
+        max-width: 100%
+
+      .left-side img
+        width: 75%
+        margin: 80px auto 50px auto
+
+      .right-side img, .right-side h1
+        margin: 0 auto
+
+      .bborder
+        border: none
+
+  .stuff
+    margin: 20px -25px 40px
+    padding: 0
+
+  .info
+    float: none
+    padding: 1px 20px 25px
+    width: 100%
+    text-align: center
+
+  form
+    float: none
+    width: 100%
+
+    h4
+      text-align: center
+      font-size: 1.2em
+      margin-bottom: 30px
+
+    p
+      label
+        display: block
+        float: none
+        font-size: 0.8em
+        width: 100%
+
+      input, textarea
+        width: 90%
+
+    .dots
+      padding: 0 0 0 15px
+      width: 85%
+
+  section
+    &.one h2
+      font-size: 3em
+
+    &.two
+      h2
+        font-size: 2.5em
+      background-position: top
+    &.module
+      p
+        font-size: 1em
+        width: 100%
+      &.parallax
+        padding: 0
+
+/* ============================================================
+ *  AUTO SCROLLING ANNIMATION
+ *============================================================ */
+@-webkit-keyframes scroll
+  100%
+    background-position: 0px -3000px
+
+
+@-moz-keyframes scroll
+  100%
+    background-position: 0px -3000px
+
+
+@-o-keyframes scroll
+  100%
+    background-position: 0px -3000px
+
+
+@-ms-keyframes scroll
+  100%
+    background-position: 0px -3000px
+
+
+@keyframes scroll
+  100%
+    background-position: 0px -3000px
